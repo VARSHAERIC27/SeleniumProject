@@ -9,7 +9,7 @@ public class Locators  extends Base{
 		WebElement Message=driver.findElement(By.id("single-input-field"));
 		
 		//find element- is a method used to locate a single webelement on a webpage
-		//By --is a class used to locate a web element it
+		//By --is a class used to locate a web element, it provides method id, name,etc.
 		WebElement singlecheckbox=driver.findElement(By.id("gridCheck"));
 		WebElement firstname=driver.findElement(By.id("validationCustom01"));
         WebElement checkebox1=driver.findElement(By.id("check-box-one"));

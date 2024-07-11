@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Base {
 	public WebDriver driver;
 	public void initiliseBrowser() {
-	driver= new ChromeDriver(); //browserv initilization
+	driver= new ChromeDriver(); //browser initilization
 	driver.get("https://selenium.qabible.in/");// launching the URL
 	driver.manage().window().maximize();
 	}
