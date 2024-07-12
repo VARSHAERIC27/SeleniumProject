@@ -20,16 +20,48 @@ public class Locators  extends Base{
 		
 	}
 	public void className() {
-		
+		WebElement element1=driver.findElement(By.className("clearfix"));
+		WebElement element2=driver.findElement(By.className("container page"));
+		WebElement element3=driver.findElement(By.className("mb-sec"));
+		WebElement element4= driver.findElement(By.className("header-top"));
+		WebElement element5=driver.findElement(By.className("needs-validation"));
+
+
+
 	}
-public void tagNameName() {
-		
+/*public void tagNameName() {
+				//WebElement elementname1=driver.findElements(By.tagname("img"));
+
+	}*/
+	public void name() {
+		WebElement element1=driver.findElement(By.name("author"));
+		WebElement element2=driver.findElement(By.name("description"));
+		WebElement element3=driver.findElement(By.name("keywords"));
+		WebElement element4=driver.findElement(By.name("viewport"));
+		//WebElement element5=driver.findElement(By.name());
+
+
+
 	}
 public void linkText() {
-	
+	WebElement element1=driver.findElement(By.linkText("Checkbox Demo"));
+	WebElement element2=driver.findElement(By.linkText("Select Input"));
+	WebElement element3=driver.findElement(By.linkText("Ajax Form Submit"));
+	WebElement element4=driver.findElement(By.linkText("Simple Form Demo"));
+	WebElement element5=driver.findElement(By.linkText("Radio Buttons Demo"));
+
+
+
+
 }
 public void parttialLinkText() {
-	
+	WebElement element1=driver.findElement(By.partialLinkText("Checkbox"));
+	WebElement element2=driver.findElement(By.partialLinkText("Select"));
+	WebElement element3=driver.findElement(By.partialLinkText("Ajax Form"));
+WebElement element4=driver.findElement(By.partialLinkText("Simple Form"));
+WebElement element5=driver.findElement(By.partialLinkText("Radio Buttons"));
+
+
 }
 
 
@@ -37,6 +69,10 @@ public void parttialLinkText() {
 		Locators locators= new Locators();
 		locators.initiliseBrowser();
 		locators.id();
+		locators.className();
+		locators.name();
+		locators.parttialLinkText();
+		locators.linkText();
 		locators.driverQuitAndClose();
 	}
 
