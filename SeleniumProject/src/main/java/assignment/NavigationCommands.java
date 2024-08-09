@@ -1,5 +1,6 @@
 package assignment;
 
+
 public class NavigationCommands extends Base {
 	public void navigationCommands() {
 		driver.navigate().to("https://www.flipkart.com/");

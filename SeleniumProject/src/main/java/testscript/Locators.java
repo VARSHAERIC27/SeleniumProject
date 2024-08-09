@@ -29,7 +29,8 @@ public class Locators  extends Base{
 
 
 	}
-/*public void tagNameName() {
+/*public void tagNameName() {//a---link
+ *                           //img---image
 				//WebElement elementname1=driver.findElements(By.tagname("img"));
 
 	}*/

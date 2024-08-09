@@ -84,6 +84,18 @@ public class XpathExample extends Base {
 		WebElement element10 = driver.findElement(By.xpath("(//option[@value='Yellow'])[2]"));
 		WebElement element11 = driver.findElement(By.xpath("(//div[@class='form-check'])[2]"));
 		WebElement element12 = driver.findElement(By.xpath("(//input[@name='student-age'])[1]"));
+		// starts with
+		// syntax:  //tag[starts-with(@attribute,'value')]           //for lengthy value
+		WebElement element16 = driver.findElement(By.xpath("//button[starts-with(@id,'button-o')]"));
+		WebElement element19 = driver.findElement(By.xpath("//input[starts-with(@id,'single-')]"));
+
+ /*AND OR
+	syntax :AND--	//tag[@attribute='value' and @attribute='value']
+	
+	        OR--   //tag[@attribute='value' OR @attribute='value']
+		*/
+		WebElement element17 = driver.findElement(By.xpath("//input[@type='text' and  @id='single-input-field']"));
+		WebElement element18 = driver.findElement(By.xpath("(//input[@type='text' and  @id='single-input-field'])[1]"));
 
 	}
 

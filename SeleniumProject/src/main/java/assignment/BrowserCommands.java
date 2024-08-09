@@ -1,5 +1,6 @@
 package assignment;
 
+
 public class BrowserCommands extends Base {
 	public void browserCommands() {
 		String title= driver.getTitle();
